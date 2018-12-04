@@ -1,0 +1,14 @@
+#term_explorer{
+  width: 25%
+}
+
+#term_tree{
+  overflow: auto;
+  padding-top: 0;
+  padding-left: 10px;
+}
+
+#term-search {
+  max-height: 25%;
+  max-width: 25%
+}

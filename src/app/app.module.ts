@@ -13,6 +13,7 @@ import { TermExplorerCardComponent } from './term-explorer-card/term-explorer-ca
 import { TermTreeComponent } from './term-tree/term-tree.component';
 import { LongitudinalViewerComponent } from './longitudinal-viewer/longitudinal-viewer.component';
 import { PlotlyModule} from 'angular-plotly.js';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PlotlyModule} from 'angular-plotly.js';
   imports: [
     BrowserModule,
     PlotlyModule,
+    MatCardModule,
     NgxsModule.forRoot([
       TermsState
     ]),

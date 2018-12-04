@@ -4,3 +4,6 @@
 @import url('../node_modules/ols-autocomplete/css/typeaheadjs.css');
 /*@import url('../node_modules/ols-autocomplete/css/bootstrap.css');*/
 @import url('../node_modules/ols-treeview/css/proton/style.css');
+
+/* for mat-card style*/
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
