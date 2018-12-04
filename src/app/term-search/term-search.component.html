@@ -1,0 +1,22 @@
+<form>
+  <label>Enter your term to get started</label> <br>
+  <input style="font-weight: normal" size="35" type="text" name="q"
+         data-olswidget="select"
+         data-olsontology= "uberon"
+         data-selectpath="https://www.ebi.ac.uk/ols/"
+         placeholder="Enter an UBERON term"
+         (change) = "changeTerm($event)"
+         class="ac_input"
+  />
+  <!--(change) = "changeTerm($event)"-->
+         <!--(oninput)="changeTerm($event)"/>-->
+  <!--(oninput)="this.onSearchTermChange($event)"/>-->
+<!--  (change)="checkFunction($event)"-->
+</form>
+
+<!--<button size=20px (click)="changeTerm()" value="Press."> </button> <br>-->
+<!--<button size=20px (click)="checkFunction($event)" value="Press."> </button> <br>-->
+<!--<p>-->
+  <!--{{this.searchTerm}}-->
+<!--</p>-->
+

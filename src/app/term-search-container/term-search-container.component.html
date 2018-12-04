@@ -1,0 +1,19 @@
+<div>
+  <app-term-search [searchTerm]="state.searchTerm"
+                   (onSearchTermChange)="onSearchTermChange($event)"
+                   (selectTermFromDropDown)="selectTermFromDropDown($event)"
+                   (onUberonIriChange)="onUberonIriChange($event)"
+  > </app-term-search>
+
+  <app-term-tree [uberonIri]="state.uberonIri"
+                 (selectTermInTree)="selectTermInTree($event)"
+  > </app-term-tree>
+</div>
+
+<!--<div>-->
+  <!--<app-longitudinal-viewer></app-longitudinal-viewer>-->
+<!--</div>-->
+
+
+
+

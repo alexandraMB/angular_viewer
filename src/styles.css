@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/ols-autocomplete/css/ols.css');
+@import url('../node_modules/ols-autocomplete/css/ols-colors.css');
+@import url('../node_modules/ols-autocomplete/css/typeaheadjs.css');
+/*@import url('../node_modules/ols-autocomplete/css/bootstrap.css');*/
+@import url('../node_modules/ols-treeview/css/proton/style.css');
