@@ -1,6 +1,6 @@
 import {Component, OnInit, Input, Output, ChangeDetectorRef} from '@angular/core';
 import {Select, Store} from '@ngxs/store';
-import {SetSearchTerm, SetUberonIri, SetUberonTerm, TermsState, TermsStateModel} from '../store-try/customStore.js';
+import {SetSearchTerm, SetUberonIri, SetUberonTerm, TermsState, TermsStateModel} from '../store/customStore.js';
 import {Observable, Subscription} from 'rxjs';
 @Component({
   selector: 'app-term-search-container',

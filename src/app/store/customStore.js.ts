@@ -18,6 +18,7 @@ export class SetHoveredNode {
   static readonly type = 'SET_HOVERED_IRI';
   constructor(public payload: string) {}
 }
+
 // store related things
 // 1.interface that describe the desire state
 export interface TermsStateModel {
@@ -45,8 +46,6 @@ export class TermsState {
       ...state,
       searchTerm: action.payload
     });
-    console.log('//' + action.payload);
-    console.log('// ' + state.searchTerm);
   }
   @Action(SetUberonTerm)
   setUberonTerm({getState, setState}: StateContext<TermsStateModel>, action: SetUberonTerm) {
@@ -55,8 +54,6 @@ export class TermsState {
       ...state,
       uberonTerm: action.payload
     });
-    console.log('//' + action.payload);
-    console.log('// ' + state.uberonTerm);
   }
   @Action(SetUberonIri)
   setUberonIri({getState, setState}: StateContext<TermsStateModel>, action: SetUberonIri) {
@@ -65,7 +62,6 @@ export class TermsState {
       ...state,
       uberonIri: action.payload
     });
-    console.log('//' + action.payload);
   }
   @Action(SetHoveredNode)
   setHoveredNode({getState, setState}: StateContext<TermsStateModel>, action: SetHoveredNode) {

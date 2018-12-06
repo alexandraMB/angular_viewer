@@ -45,8 +45,6 @@ export class TermTreeComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes.uberonIri.isFirstChange()) {
-    console.log('****----*****' + changes.uberonIri.previousValue);
-    console.log('****----*****' + this.uberonIri);
       this.instance.draw(
         this.$myDiv,
         false,

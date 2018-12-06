@@ -4,6 +4,66 @@
 @import url('../node_modules/ols-autocomplete/css/typeaheadjs.css');
 /*@import url('../node_modules/ols-autocomplete/css/bootstrap.css');*/
 @import url('../node_modules/ols-treeview/css/proton/style.css');
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
 /* for mat-card style*/
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+/*.layout{*/
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 2fr;*/
+  /*grid-row-gap: 10px;*/
+  /*grid-column-gap: 10px;*/
+/*}*/
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /*grid-template-rows: repeat(2, minmax(300px, 1fr));*/
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+
+.term_explorer_card{
+  grid-column: 1/4;
+}
+.bel_viewer_card{
+  grid-column: 4/-1;
+}
+.connectivity_viewer_card{
+  grid-column: 1/8;
+}
+.longitudinal_viewer_card{
+  grid-column: 8/-1;
+}
+
+
+/*.term_explorer{*/
+ /*!* width: 500px;*!*/
+  /*grid-column: 1 / 4;*/
+  /*!*grid-column: 1/4;*!*/
+  /*!*grid-column-start: 1;*!*/
+  /*!*grid-column-end: 4;*!*/
+/*}*/
+#term_tree{
+  overflow: auto;
+  padding-top: 0;
+  padding-left: 10px;
+  max-height: 230px;
+}
+/*#bel_viewer{*/
+  /*grid-column: 4/-1;*/
+/*}*/
+/*#brain_viewer{*/
+  /*grid-column: 1 / 8;*/
+/*}*/
+
+/*#longitudinal_viewer{*/
+  /*grid-column: 8 / -1;*/
+/*}*/
+/*#line{*/
+  /*margin: 0;*/
+/*}*/
+

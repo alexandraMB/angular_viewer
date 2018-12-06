@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchTreeComponent } from './search-tree.component';
+import { BelViewerCardComponent } from './bel-viewer-card.component';
 
-describe('SearchTreeComponent', () => {
-  let component: SearchTreeComponent;
-  let fixture: ComponentFixture<SearchTreeComponent>;
+describe('BelViewerCardComponent', () => {
+  let component: BelViewerCardComponent;
+  let fixture: ComponentFixture<BelViewerCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchTreeComponent ]
+      declarations: [ BelViewerCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchTreeComponent);
+    fixture = TestBed.createComponent(BelViewerCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

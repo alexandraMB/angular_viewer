@@ -1,14 +1,20 @@
-#term_explorer{
-  width: 25%
-}
+/*#term_explorer{
+  width: 500px;
+}*/
 
-#term_tree{
-  overflow: auto;
-  padding-top: 0;
-  padding-left: 10px;
-}
+/*#term_tree{*/
+  /*overflow: auto;*/
+  /*padding-top: 0;*/
+  /*padding-left: 10px;*/
+/*}*/
 
+/*
+#line{
+  margin: 0;
+}*/
+/*
 #term-search {
+  overflow: auto;
   max-height: 25%;
-  max-width: 25%
-}
+  max-width: 25%;
+}*/

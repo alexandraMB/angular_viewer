@@ -1,4 +1,18 @@
+<!--<div id="longitudinal_viewer">-->
+  <!--<mat-card>-->
+    <!--<mat-card-title>Longitudinal Viewer</mat-card-title>-->
+    <!--<hr id="line"/> <br>-->
+    <!--<mat-card-content>-->
+        <!--<plotly-plot [data]=data  [layout]=layout [config]=config>Loading...</plotly-plot>-->
+    <!--</mat-card-content>-->
+  <!--</mat-card>-->
+<!--</div>-->
 
-<div>
-  <plotly-plot [data]=data  [layout]=layout [config]=config>Loading...</plotly-plot>
-</div>
+<ngb-accordion [closeOthers]="true" activeIds="longitudinal_viewer">
+  <ngb-panel id="longitudinal_viewer">
+    <ng-template ngbPanelTitle>LongitudinalViewer</ng-template>
+    <ng-template ngbPanelContent>
+      <plotly-plot [data]=data  [layout]=layout [config]=config>Loading...</plotly-plot>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

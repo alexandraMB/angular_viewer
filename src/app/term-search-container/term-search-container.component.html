@@ -1,34 +1,33 @@
-<!--<div>-->
-  <!--<app-term-search [searchTerm]="state.searchTerm"-->
-                   <!--(onSearchTermChange)="onSearchTermChange($event)"-->
-                   <!--(selectTermFromDropDown)="selectTermFromDropDown($event)"-->
-                   <!--(onUberonIriChange)="onUberonIriChange($event)"-->
-  <!--&gt; </app-term-search>-->
-
-  <!--<app-term-tree [uberonIri]="state.uberonIri"-->
-                 <!--(selectTermInTree)="selectTermInTree($event)"-->
-  <!--&gt; </app-term-tree>-->
-<!--</div>-->
-
-<!--<div>-->
-  <!--<app-longitudinal-viewer></app-longitudinal-viewer>-->
-<!--</div>-->
-
-<div id="term_explorer">
-<mat-card>
-  <mat-card-title>TermExplorer</mat-card-title>
-  <hr width="100%" align="left">
-  <mat-card-content id="">
-      <app-term-search [searchTerm]="state.searchTerm"
+<div>
+  <app-term-search [searchTerm]="state.searchTerm"
                    (onSearchTermChange)="onSearchTermChange($event)"
                    (selectTermFromDropDown)="selectTermFromDropDown($event)"
                    (onUberonIriChange)="onUberonIriChange($event)"> </app-term-search>
-  </mat-card-content>
-  <mat-card-content id="term_tree">
-      <app-term-tree [uberonIri]="state.uberonIri"
-                 (selectTermInTree)="selectTermInTree($event)"> </app-term-tree>
-  </mat-card-content>
-</mat-card>
+
+  <div id="term_tree">
+    <app-term-tree [uberonIri]="state.uberonIri"
+                   (selectTermInTree)="selectTermInTree($event)"> </app-term-tree>
+  </div>
 </div>
+
+<!--<div>-->
+<!--<mat-card class="term_explorer">-->
+  <!--<mat-card-title>Term Explorer</mat-card-title>-->
+  <!--&lt;!&ndash;<hr width="100%" align="left">&ndash;&gt;-->
+  <!--<hr id="line"/> <br>-->
+  <!--<mat-card-content id="term-search">-->
+      <!--<app-term-search [searchTerm]="state.searchTerm"-->
+                   <!--(onSearchTermChange)="onSearchTermChange($event)"-->
+                   <!--(selectTermFromDropDown)="selectTermFromDropDown($event)"-->
+                   <!--(onUberonIriChange)="onUberonIriChange($event)"> </app-term-search>-->
+  <!--</mat-card-content>-->
+  <!--<mat-card-content id="term_tree">-->
+      <!--<app-term-tree [uberonIri]="state.uberonIri"-->
+                 <!--(selectTermInTree)="selectTermInTree($event)"> </app-term-tree>-->
+  <!--</mat-card-content>-->
+<!--</mat-card>-->
+<!--</div>-->
+
+
 
 
