@@ -3,11 +3,11 @@ import {Select, Store} from '@ngxs/store';
 import {SetSearchTerm, SetUberonIri, SetUberonTerm, TermsState, TermsStateModel} from '../store/customStore.js';
 import {Observable, Subscription} from 'rxjs';
 @Component({
-  selector: 'app-term-search-container',
-  templateUrl: './term-search-container.component.html',
-  styleUrls: ['./term-search-container.component.css']
+  selector: 'app-term-explorer-container',
+  templateUrl: './term-explorer-container.component.html',
+  styleUrls: ['./term-explorer-container.component.css']
 })
-export class TermSearchContainerComponent implements OnInit {
+export class TermExplorerContainerComponent implements OnInit {
   @Select(TermsState) searchTerm$: Observable<TermsStateModel>;
   state: TermsStateModel;
   storeSub: Subscription;

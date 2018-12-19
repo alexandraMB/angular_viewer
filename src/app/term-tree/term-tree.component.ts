@@ -10,8 +10,8 @@ export class TermTreeComponent implements OnInit, OnChanges {
   @Input() uberonIri: string;
   @Output() selectTermInTree: EventEmitter<any> = new EventEmitter();
 
-  @ViewChild('myDiv') myDiv: ElementRef;
-  $myDiv: any;
+  @ViewChild('treeDiv') treeDiv: ElementRef;
+  $treeDiv: any;
 
   instance: OLSTree ;
   options: {};
@@ -20,20 +20,19 @@ export class TermTreeComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.$myDiv = $(this.myDiv.nativeElement);
+    this.$treeDiv = $(this.treeDiv.nativeElement);
     const handleChanges = (node) => {
        this.selectTermInTree.emit({term: node.node.original.text, iri: node.node.original.iri});
     };
 
     this.options = {
       onclick(params, node) {
-         console.log('^^^ ' + node.node.original.text);
         handleChanges(node);
       },
     };
 
     this.instance.draw(
-      this.$myDiv,
+      this.$treeDiv,
       false,
       'uberon',
       'terms',
@@ -46,7 +45,7 @@ export class TermTreeComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes.uberonIri.isFirstChange()) {
       this.instance.draw(
-        this.$myDiv,
+        this.$treeDiv,
         false,
         'uberon',
         'terms',

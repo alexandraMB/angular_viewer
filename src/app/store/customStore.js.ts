@@ -1,6 +1,5 @@
 import {Action, State, StateContext} from '@ngxs/store';
 
-
 // action class
 export class SetSearchTerm {
   static readonly type = 'SET_SEARCH_TERM';
@@ -19,8 +18,8 @@ export class SetHoveredNode {
   constructor(public payload: string) {}
 }
 
-// store related things
-// 1.interface that describe the desire state
+// store
+// 1.interface that describe the desired state
 export interface TermsStateModel {
   searchTerm: string;
   uberonTerm: string;
@@ -70,7 +69,5 @@ export class TermsState {
       ...state,
       hoveredNode: action.payload
     });
-    console.log('//' + action.payload);
-    console.log('// ' + state.hoveredNode);
   }
 }

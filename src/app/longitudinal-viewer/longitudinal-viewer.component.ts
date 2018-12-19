@@ -9,7 +9,7 @@ export class LongitudinalViewerComponent implements OnInit {
   data = [
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -24,7 +24,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.776470588235294,
         0.788235294117647,
         0.8,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.411301569049573,
         0.427930971086883,
@@ -38,12 +38,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.473695340442853,
         0.486012067608996,
         0.500418453790595,
-      ], // #scatter-y
+      ],
       name: 'AB40',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -58,7 +58,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.776470588235294,
         0.788235294117647,
         0.8,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.336473892244031,
         0.350914934791542,
@@ -72,12 +72,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.298193106515107,
         0.311079900598061,
         0.335135043045149,
-      ], // #scatter-y
+      ],
       name: 'AB42',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -92,7 +92,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.776470588235294,
         0.788235294117647,
         0.8,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.137708004453001,
         0.133358155659918,
@@ -111,7 +111,7 @@ export class LongitudinalViewerComponent implements OnInit {
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -123,7 +123,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.658823529411765,
         0.682352941176471,
         0.694117647058824,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.275078119832423,
         0.308509840355362,
@@ -134,12 +134,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.385039927038785,
         0.340697218117062,
         0.365030521525656,
-      ], // #scatter-y
+      ],
       name: 'ABETA',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -155,7 +155,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.00433980045232104,
         0.00455715279564146,
@@ -170,12 +170,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.250066193344548,
         0.281362680379281,
         0.367073021347562,
-      ], // #scatter-y
+      ],
       name: 'CDRSB',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -191,7 +191,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.161976750327553,
         0.15929719096286,
@@ -206,12 +206,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.278064500906578,
         0.31517242614321,
         0.408825585618848,
-      ], // #scatter-y
+      ],
       name: 'Cognition',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -226,7 +226,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.494031938412892,
         0.499874413098791,
@@ -240,12 +240,11 @@ export class LongitudinalViewerComponent implements OnInit {
         0.716679998623258,
         0.726165388667109,
         0.753857974815165,
-      ], // #scatter-y
+      ],
       name: 'Entorhinal',
     },
     {
-      // visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline', dash: 'dash', width: 5 },
       x: [
         0.529411764705882,
@@ -260,7 +259,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.435795861032036,
         0.439186456312056,
@@ -274,12 +273,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.639496543115438,
         0.653172629785891,
         0.682340903099579,
-      ], // #scatter-y
+      ],
       name: 'Hippocampal formation',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -295,7 +294,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.0347575705379995,
         0.0382019471890005,
@@ -310,12 +309,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.273563401265787,
         0.321613230281511,
         0.401842485486975,
-      ], // #scatter-y
+      ],
       name: 'MMSE',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -327,7 +326,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.658823529411765,
         0.682352941176471,
         0.694117647058824,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.45880558212467,
         0.482713220922961,
@@ -338,12 +337,12 @@ export class LongitudinalViewerComponent implements OnInit {
         0.56566607465001,
         0.556918822412765,
         0.554357490381539,
-      ], // #scatter-y
+      ],
       name: 'TAU',
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -355,7 +354,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.658823529411765,
         0.682352941176471,
         0.694117647058824,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.411263134986023,
         0.47925470581894,
@@ -371,7 +370,7 @@ export class LongitudinalViewerComponent implements OnInit {
     },
     {
       visible: 'legendonly',
-      type: 'scatter', // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+      type: 'scatter',
       line: { shape: 'spline' },
       x: [
         0.529411764705882,
@@ -386,7 +385,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.770588235294118,
         0.776470588235294,
         0.788235294117647,
-      ], // more about "x": #scatter-x
+      ],
       y: [
         0.495111448507894,
         0.506329093606161,
@@ -400,7 +399,7 @@ export class LongitudinalViewerComponent implements OnInit {
         0.596174815244803,
         0.607816455859437,
         0.636454013629331,
-      ], // #scatter-y
+      ],
       name: 'Ventricles',
     },
   ];
