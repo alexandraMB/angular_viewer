@@ -17,7 +17,9 @@ import { GridContainerComponent } from './grid-container/grid-container.componen
 import { BelViewerCardComponent } from './bel-viewer-card/bel-viewer-card.component';
 import { BrainConnectivityViewerCardComponent } from './brain-connectivity-viewer-card/brain-connectivity-viewer-card.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
+import { GraphComponent } from './brain-connectivity-viewer-card/visual/graph/graph.component';
+import { NodeTagComponent } from './brain-connectivity-viewer-card/visual/node-tag/node-tag.component';
+import { LinkTagComponent } from './brain-connectivity-viewer-card/visual/link-tag/link-tag.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     LongitudinalViewerComponent,
     GridContainerComponent,
     BelViewerCardComponent,
-    BrainConnectivityViewerCardComponent
+    BrainConnectivityViewerCardComponent,
+    GraphComponent,
+    NodeTagComponent,
+    LinkTagComponent
+
   ],
   imports: [
     BrowserModule,

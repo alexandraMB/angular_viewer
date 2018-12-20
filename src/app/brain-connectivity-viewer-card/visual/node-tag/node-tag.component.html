@@ -1,0 +1,12 @@
+<svg:g [attr.transform]="'translate(' + node.x + ',' + node.y + ')'">
+  <svg:circle  class="node"
+    cx="0"
+    cy="0"
+    [attr.r]="node.radius"
+    [attr.fill]="node.color">
+  </svg:circle>
+  <svg:text
+    class="node-name">
+    {{node.name}}
+  </svg:text>
+</svg:g>

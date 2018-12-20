@@ -11,7 +11,9 @@
   <ngb-panel id="brain_viewer">
     <ng-template ngbPanelTitle>Brain Connectivity Viewer</ng-template>
     <ng-template ngbPanelContent>
-      Loading...
+      <app-graph [nodes]="nodes" [links]="links" *ngIf="flag==true"></app-graph>
     </ng-template>
   </ngb-panel>
 </ngb-accordion>
+
+
